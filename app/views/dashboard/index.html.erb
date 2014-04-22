@@ -1,0 +1,14 @@
+<%= form_for @long_url do |f| %>
+  <%= f.label :normal_url %>
+  <%= f.text_field :normal_url %>
+  <%= f.submit "Longify!" %>
+<% end %>
+
+<ul>
+  <% @long_urls.each do |long_url| %>
+  <li>
+    <span class="normal-url"><%= long_url.normal_url %></span> =>
+    <span class="long-url"><%= long_url.long_url %></span>
+  </li>
+  <% end %>
+</ul>

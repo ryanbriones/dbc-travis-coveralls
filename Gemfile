@@ -38,3 +38,11 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'faker', '~> 1.3.0'
+
+group :development, :test do
+  gem "rspec-rails", "~>2.14"
+  gem "capybara", "~>2.1"
+  gem 'selenium-webdriver'
+end
+
