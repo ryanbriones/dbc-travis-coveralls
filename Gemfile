@@ -44,5 +44,6 @@ group :development, :test do
   gem "rspec-rails", "~>2.14"
   gem "capybara", "~>2.1"
   gem 'selenium-webdriver'
+  gem 'coveralls', require: false
 end
 
